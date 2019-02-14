@@ -191,7 +191,6 @@ body {
     position: absolute;
     text-align: center;
     border: 2px dashed #007acc;
-    font-size: 5px;
     z-index: 1;
     max-width: 60%;
 }

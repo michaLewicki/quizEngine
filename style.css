@@ -1,0 +1,231 @@
+body {
+    background-image: linear-gradient(to bottom right, #31345f, #18104f);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#header{
+    color: white;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+#header #author{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Mistral;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+.tekst{
+    position: absolute;
+}
+
+.question {
+    color: white;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium';
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 80%;
+    white-space: normal !important;
+    text-align: center;
+}
+.button{
+    position: absolute;
+    border: solid yellow 2px;
+    width: 35%;
+    height: 70px;
+    background-color: #17043e;
+    color: white;
+    text-align: left;
+    white-space: normal !important;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.A{
+    top: 45%;
+    left: 10%;
+}
+.B{
+    top: 45%;
+    left: 55%;
+}
+.C {
+    top: 60%;
+    left: 10%;
+}
+.D {
+    top: 60%;
+    left: 55%;
+}
+.button:not(.clicked):hover{
+    background-color: blueviolet;
+}
+.yellow {
+    color: black;
+    background-image: linear-gradient(to top left, #e5d913, #faf1c4);
+}
+.green {
+    background-image: linear-gradient(to top left, green, #5ded26);
+    color: white;
+}
+.fileInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.fileInput + label, .start {
+    background-color: #4040a0;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid white 2px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+    line-height: 50px;
+}
+.fileInput:focus + label, .fileInput + label:hover, .start:hover, .start:focus {
+    background-color: #221d75;
+}
+.fileSelected {
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+    background-color: #3cbd1e;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid white 2px;
+    line-height: 50px;
+}
+.groupsSelection, .pointsSelection {
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+}
+.groupsSelection input{
+    background-color: #4040a0;
+    color: white;
+    width: 50px;
+    height: 25px;
+    font-size: 25px;
+}
+.pointsSelection{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+}
+.points, .summary{
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+}
+.summary {
+    top: 70%;
+}
+.tables{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+}
+.table {
+    display: inline-block;
+    border: solid #4040a0 5px;
+    height: 75%;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+    line-height: 3em;
+}
+.currentGroup{
+    border: solid #ff9900 5px;
+}
+.lifeButton{
+    height: 20px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #17043e;
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
+.nextQuestion {
+    position: absolute;
+    background-color: #18104f;
+    color: white;
+    top: 70%;
+    left: 45%;
+    width: 10%;
+    border: solid white 1px;
+}
+
+#draggable {
+    position: absolute;
+    text-align: center;
+    border: 2px dashed #007acc;
+    font-size: 5px;
+    z-index: 1;
+    max-width: 60%;
+}
+#explanation-draggable {
+    padding: 10px;
+    cursor: move;
+    background-color: #2d2d30;
+    color: azure;
+    font-size: 25px;
+}
+
+
+.info {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 40px;
+}
+.textInfo{
+    position: relative;
+    left: 20%;
+    width: 60%;
+    font-size: 20px;
+    word-wrap: normal;
+    text-align: justify;
+}
+li {
+    padding: 5px;
+}

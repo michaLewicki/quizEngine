@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Your own Quiz - Info</title>
+</head>
+<body>
+    <div id="header">
+        <b>Quiz Engine</b> <div id="author">by MichaL</div>
+    </div><br /><br />
+    <center>
+        <h1>Zasady działania i rozgrywki</h1>
+    </center>
+    <div class="textInfo">
+        <ul>
+            <li>Kroki przygotowawcze:</li>
+            <li style="list-style: none;">
+                <ol>
+                    <li>Na początku użytkownik zostaje poproszony o załadowanie wcześniej przygotowanych pytań. Pytania muszą być w odpowiedni sposób sformatowane (sekcja "Tworzenie pytań"). Jedynie w przypadku pomyślnego przetworzenia program poinformuje o tym oraz umożliwi przejście do dalszych kroków interakcji.</li>
+                    <li>Pokazuje się wybór liczby startujących grup (od 1 do 6). Po kliknięciu przycisku "Start" gra zostaje rozpoczęta, o ile pytań jest wystarczająco dużo do przeprowadzenia pełnej kolejki pytań.<br /><br />
+                    <strong>!!! UWAGA !!!<br />Każde odświeżenie (ponowne załadowanie) karty przeglądarki skutkuje utraceniem bieżącego stanu rozgrywki i rozpoczęciem gry od nowa.</strong><br />Aby zapobiec przypadkowemu odświeżeniu/zamknięciu karty w trakcie gry, przed każdą taką próbą wyświetlany jest komunikat z prośbą o potwierdzenie, które należy odrzucić, chyba że działanie użytkownika jest świadome (<strong>należy szczególnie uważać, aby nie zablokować wyświetlania tego powiadomienia w przyszłości!</strong>). Jako dodatkowe zabezpieczenie, przez znaczną część czasu gry większość klawiszy pozostaje nieaktywna. Niektóre klawisze/skróty klawiszowe są obsługiwane zawsze przez przeglądarkę/system operacyjny, przez co niemożliwa jest ich deaktywacja z poziomu aplikacji. W szczególności mogą być: <strong>F5, Ctrl+W</strong> i inne.</li>
+                </ol><br />
+            </li>
+            <li>W każdej kolejce pytań grupy kolejno odpowiadają na jedno pytanie o wybranym przez siebie poziomie trudności. Do pytania przechodzi się poprzez kliknięcie odpowiedniego przycisku.</li>
+            <li>Pytania w pojedynczej rozgrywce nie powtarzają się.</li>
+            <li>Grupa, która właśnie wybiera stopień trudności lub odpowiada na pytanie, wyróżniona jest w tabeli punktów za pomocą pomarańczowego obramowania.</li>
+            <li>Każda z grup może raz w całej rozgrywce (po poznaniu pytania, przed udzieleniem odpowiedzi na nie) skorzystać z koła ratunkowego (w dowolnej formie, ustalonej przed grą). Służą do tego przyciski pod wynikiem punktowym każdej grupy. Jeżeli koło dla danej grupy jest dostępne, przycisk ma kolor zielony. Do koła będącego aktualnie w użytku przypisano kolor cyjan. Koło niedostępne (wcześniej wykorzystane) ma kolor czerwony.</li>
+            <li>Po wyświetleniu pytania wraz z czterema możliwymi opcjami, odpowiedź wybiera się poprzez kliknięcie (zaznaczenie) jednej z nich. Po zaznaczeniu, tło wybranej odpowiedzi zmienia kolor na żółty. Raz zaznaczonej odpowiedzi nie można zmienić.</li>
+            <li>Aby wyświetlić, która z odpowiedzi jest poprawna, należy nacisnąć klawisz Spacja. Podświetli się ona wówczas na zielono.</li>
+            <li>Udzielenie poprawnej odpowiedzi skutkuje dopisaniem do wyniku liczby punktów przypisanej danemu pytaniu. Błędna odpowiedź nie zmienia stanu konta punktowego grupy.</li>
+            <li>Po pokazaniu prawidłowej odpowiedzi, wyświetlane jest okno z objaśnieniem do pytania/odpowiedzi, które można przeciągać za pomocą myszki.</li>
+            <li>Po każdej pełnej kolejce pytań wyświetlana jest informacja, że przedstawione wyniki są podsumowaniem dotychczasowej rozgrywki. Gra może zakończyć się po dowolnej kolejce (ustalane przez prowadzącego/uczestników). W przypadku, w którym w bazie pozostało zbyt mało pytań do przeprowadzenia następnej kolejki, wyświetlana jest stosowna informacja, a dalsza interakcja jest niemożliwa.</li>
+            <li>Aby przejść do pytania dla następnej w kolejce grupy, należy nacisnąć klawisz Enter.</li>
+        </ul>
+    </div>
+    <br />
+    <center>
+        <h1>Tworzenie pytań</h1>
+    </center>
+    <div class="textInfo">
+        <ul>
+            <li>Pytania tworzy się przy użyciu programu Microsoft Excel lub pochodnych. Aby zostały później poprawnie przetworzone przez aplikację, koniecznie należy zachować następujący porządek danych w kolejnych kolumnach:</li>
+        </ul>
+    </div>
+    <table border="1" style="left: 10%; position: relative; width: 80%; text-align: center;">
+        <tr>
+            <td>Id pytania<br />(kolejna liczba naturalna)</td>
+            <td>Waga pytania<br />(liczba punktów do zdobycia)</td>
+            <td>Treść pytania</td>
+            <td>Odpowiedź A</td>
+            <td>Czy A prawdziwa?</td>
+            <td>Odpowiedź B</td>
+            <td>Czy B prawdziwa?</td>
+            <td>Odpowiedź C</td>
+            <td>Czy C prawdziwa?</td>
+            <td>Odpowiedź D</td>
+            <td>Czy D prawdziwa?</td>
+            <td>Źródło odpowiedzi</td>
+            <td>Objaśnienie do pytania/odpowiedzi</td>
+        </tr>
+    </table>
+    <div class="textInfo">
+        <ul>
+            <li style="list-style: none;">gdzie wartość w kolumnach "Czy odp. prawdziwa?" to 0 w przypadku odpowiedzi błędnej i 1 dla odpowiedzi prawidłowej (<strong>tylko jedna odpowiedź może być prawidłowa!</strong>).<br /><br /><i>Przykład poprawnie wpisanych pytań za dwa i trzy punkty:</i><br /><img src="question.jpg" style="width: 100%;" /><br /><br /></li>
+            <li>
+                Aby rozszerzyć możliwości przy tworzeniu pytań, treść przetwarzana jest jako kod HTML. Pozwala to korzystać z licznych konstrukcji języka. Podstawowe z nich to:
+                <ul style="list-style-type: circle">
+                    <li>&lt;br&gt; - tworzy nową linię</li>
+                    <li>&lt;i&gt;<i>tekst pisany kursywą</i>&lt;/i&gt;</li>
+                    <li>&lt;strong&gt;<strong>tekst pogrubiony</strong>&lt;/strong&gt;</li>
+                    <li>ponieważ znaki "&lt;" i "&gt;" traktowane są jako znaki specjalne języka HTML, aby wyświetlić je poprawnie, należy wpisać w treści odpowiednio "&amp;lt;" lub "&amp;gt;"</li>
+                    <li>możliwe jest wstawianie w pytaniach i objaśnieniach m.in. zdjęć, lecz z uwagi na pewne trudności i potencjalnie niezadowalające efekty, zaleca się to jedynie obeznanym użytkownikom, ze wcześniejszym przetestowaniem poprawności działania. Aby ułatwić obsługę tego typu plików, do dyspozycji użytkownika oddano dwie klasy CSS - "picture" i "front" oraz funkcję "showOrHidePicture(e)" podpinaną pod zdarzenie "onclick", do której należy przekazać parametr "this".<br /><i>Przykład zastosowania:<br />&lt;img src="myPhoto.jpg" onclick="showOrHidePicture(this);" class="picture front" /&gt;</i></li>
+                </ul>
+                <br />
+                <strong>!!! UWAGA !!!<br />Pozostawienie wsparcia dla konstrukcji języka może rodzić pewne niebezpieczeństwo.</strong><br />W treści pytań możliwe jest umieszczenie potencjalnie złośliwego kodu, który wywoła niepożądaną akcję. Dlatego przed wykorzystaniem pytań pochodzących z niezaufanych źródeł zawsze należy upewnić się, że nie zawierają niepożądanej treści. Najłatwiejszym, choć nie dającym 100% pewności sposobem jest przeszukanie treści pliku z pytaniami pod kątem słów takich jak: <strong>script, function, onload, onmouseover, onmouseout, onscroll, onclick</strong>. Obecność tych słów może, choć nie musi świadczyć o obecności potencjalnie złośliwego kodu (jak w przypadku ww. przykładu ze zdjęciem).<br /><br />
+            </li>
+            <li>Po utworzeniu bazy pytań, niezbędne jest umieszczenie jej w pliku tekstowym. W tym celu należy zaznaczyć <strong>wyłącznie</strong> te komórki arkusza, które zawierają dane z pytaniami (najłatwiej, będąc w jednej z komórek z danymi, nacisnąć Ctrl+A, wówczas zaznaczą się jedynie te komórki, które nie są puste). Po zaznaczeniu, komórki należy skopiować (Ctrl+C) i wkleić do pliku z rozszerzeniem ".txt".<br /><br /><i>Przykład pliku gotowego do użycia w aplikacji:<br /><img src="file.jpg" style="width: 100%;" /></i><br /><br />
+            <strong>Uwaga 1.</strong> Domyślnym zachowaniem przy wklejaniu z programu Microsoft Excel jest pozostawienie ostatniej linii pustej. W przypadku niektórych innych programów (np. Google Sheets), gdzie dodatkowa linia nie jest dodawana, należy stworzyć ją ręcznie (ostatnia linia pliku nie jest zapisywana w bazie pytań, w związku z czym może tam się znaleźć np. informacja o autorze pytań).<br /><br />
+            <strong>Uwaga 2.</strong> Plik z pytaniami musi być zapisany w formacie (systemie kodowania) UTF-8.<br />Z uwagi na komfort użytkowników, zalecane (choć nie wymagane) jest używanie edytorów innych (lepszych) niż domyślny Notatnik (np. Notepad++).<br /><br /></li>
+            <li><i>Obeznani użytkownicy zauważą, że w pliku tekstowym do przetworzenia przez program poszczególne kolumny rozdzielane są znakiem tabulacji, a poszczególne pytania znakiem nowej linii. Możliwe jest zatem tworzenie pytań wyłącznie z użyciem edytora tekstu, może to być jednak bardziej uciążliwe.</i></li>
+        </ul>
+        <br><br />
+       <center>
+            <span style="font-family:'Mistral'; font-size: 40px;">Życzę wszystkim przyjemnej gry.</span><br /><br />
+            <span style="font-family: 'Monotype Corsiva';">Wyrazy uznania dla tych, którzy przeczytali całość powyższego tekstu.</span>
+        </center>
+</div>
+    <div onclick="window.close();" class="info">
+        &#x21A9
+    </div>
+</body>
+</html>

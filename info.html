@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf8">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="icon" href="files/icon.png" />
     <title>Your own Quiz - Info</title>
 </head>
 <body>
@@ -62,7 +63,7 @@
     </table>
     <div class="textInfo">
         <ul>
-            <li style="list-style: none;">gdzie wartość w kolumnach "Czy odp. prawdziwa?" to 0 w przypadku odpowiedzi błędnej i 1 dla odpowiedzi prawidłowej (<strong>tylko jedna odpowiedź może być prawidłowa!</strong>).<br /><br /><i>Przykład poprawnie wpisanych pytań za dwa i trzy punkty:</i><br /><img src="question.JPG" style="width: 100%;" /><br /><br /></li>
+            <li style="list-style: none;">gdzie wartość w kolumnach "Czy odp. prawdziwa?" to 0 w przypadku odpowiedzi błędnej i 1 dla odpowiedzi prawidłowej (<strong>tylko jedna odpowiedź może być prawidłowa!</strong>).<br /><br /><i>Przykład poprawnie wpisanych pytań za dwa i trzy punkty:</i><br /><img src="files/question.JPG" style="width: 100%;" /><br /><br /></li>
             <li>
                 Aby rozszerzyć możliwości przy tworzeniu pytań, treść przetwarzana jest jako kod HTML. Pozwala to korzystać z licznych konstrukcji języka. Podstawowe z nich to:
                 <ul style="list-style-type: circle">
@@ -75,7 +76,7 @@
                 <br />
                 <strong>!!! UWAGA !!!<br />Pozostawienie wsparcia dla konstrukcji języka może rodzić pewne niebezpieczeństwo.</strong><br />W treści pytań możliwe jest umieszczenie potencjalnie złośliwego kodu, który wywoła niepożądaną akcję. Dlatego przed wykorzystaniem pytań pochodzących z niezaufanych źródeł zawsze należy upewnić się, że nie zawierają niepożądanej treści. Najłatwiejszym, choć nie dającym 100% pewności sposobem jest przeszukanie treści pliku z pytaniami pod kątem słów takich jak: <strong>script, function, onload, onmouseover, onmouseout, onscroll, onclick</strong>. Obecność tych słów może, choć nie musi świadczyć o obecności potencjalnie złośliwego kodu (jak w przypadku ww. przykładu ze zdjęciem).<br /><br />
             </li>
-            <li>Po utworzeniu bazy pytań, niezbędne jest umieszczenie jej w pliku tekstowym. W tym celu należy zaznaczyć <strong>wyłącznie</strong> te komórki arkusza, które zawierają dane z pytaniami (najłatwiej, będąc w jednej z komórek z danymi, nacisnąć Ctrl+A, wówczas zaznaczą się jedynie te komórki, które nie są puste). Po zaznaczeniu, komórki należy skopiować (Ctrl+C) i wkleić do pliku z rozszerzeniem ".txt".<br /><br /><i>Przykład pliku gotowego do użycia w aplikacji:<br /><img src="file.JPG" style="width: 100%;" /></i><br /><br />
+            <li>Po utworzeniu bazy pytań, niezbędne jest umieszczenie jej w pliku tekstowym. W tym celu należy zaznaczyć <strong>wyłącznie</strong> te komórki arkusza, które zawierają dane z pytaniami (najłatwiej, będąc w jednej z komórek z danymi, nacisnąć Ctrl+A, wówczas zaznaczą się jedynie te komórki, które nie są puste). Po zaznaczeniu, komórki należy skopiować (Ctrl+C) i wkleić do pliku z rozszerzeniem ".txt".<br /><br /><i>Przykład pliku gotowego do użycia w aplikacji:<br /><img src="files/file.JPG" style="width: 100%;" /></i><br /><br />
             <strong>Uwaga 1.</strong> Domyślnym zachowaniem przy wklejaniu z programu Microsoft Excel jest pozostawienie ostatniej linii pustej. W przypadku niektórych innych programów (np. Google Sheets), gdzie dodatkowa linia nie jest dodawana, należy stworzyć ją ręcznie (ostatnia linia pliku nie jest zapisywana w bazie pytań, w związku z czym może tam się znaleźć np. informacja o autorze pytań).<br /><br />
             <strong>Uwaga 2.</strong> Plik z pytaniami musi być zapisany w formacie (systemie kodowania) UTF-8.<br />Z uwagi na komfort użytkowników, zalecane (choć nie wymagane) jest używanie edytorów innych (lepszych) niż domyślny Notatnik (np. Notepad++).<br /><br /></li>
             <li><i>Obeznani użytkownicy zauważą, że w pliku tekstowym do przetworzenia przez program poszczególne kolumny rozdzielane są znakiem tabulacji, a poszczególne pytania znakiem nowej linii. Możliwe jest zatem tworzenie pytań wyłącznie z użyciem edytora tekstu, może to być jednak bardziej uciążliwe.</i></li>

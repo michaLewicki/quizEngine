@@ -9,4 +9,3 @@
 9	2	Na półkuli południowej nie znajduje się	Zwrotnik Koziorożca	0	Tanzania	0	Zatoka Bengalska	1	Góra Kościuszki	0	źródło: Wikipedia, Google maps	Zatoka Benglska znajduje się pomiędzy Półwyspem Indyjskim, wyspą Cejlon oraz archipelagami Andamany i Nikobary.
 10	3	Najwyższą wysokość względną ma	Mauna Kea	1	Mount Everest	0	K2	0	Elbrus	0	źródło: Wikipedia	Wysokość względna liczona jest od podstawy do wierzchołka góry. Mauna Kea ma wysokość 4205 m n.p.m, ale od podstawy na dnie Oceanu Spokojnego liczy 10 203 m.
 11	2	Które z wymienionych państw nie jest enklawą?	Watykan	0	San Marino	0	Lesotho	0	Wszystkie wymienione państwa to enklawy.	1	źródło: Wikipedia	A i B: w terytorium Włoch <br>C: w terytorium RPA
- 

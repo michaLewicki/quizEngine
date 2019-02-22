@@ -228,3 +228,9 @@ body {
 li {
     padding: 5px;
 }
+.link{
+    color: azure;
+}
+.link:hover{
+    color: darkcyan;
+}

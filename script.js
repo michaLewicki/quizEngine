@@ -21,7 +21,7 @@ window.onload = function () {
     question = document.getElementsByClassName("question")[0];
     answers = document.getElementsByClassName("answers")[0];
 
-    //czytanie i przetwarzanie pytañ z pliku
+    //czytanie i przetwarzanie pytaÃ± z pliku
     var file = document.getElementById("file");
     var reader, text, textArray, questions;
     var text;
@@ -139,6 +139,8 @@ function markSelectedButton(someButton) {
 function showCorrectAnswer(someButton) {
     document.onkeydown = async function (e) {
         if (e.key == " ") {
+            document.onkeydown = () => false;
+            document.onclick = () => false;
             someButton.className += " green";
             await sleep(500);
             someButton.classList.remove("green");
@@ -162,12 +164,17 @@ function showCorrectAnswer(someButton) {
                 whichGroup = 0;
                 roundNumber++;
             }
+            document.onclick = () => true;
             var draggable = document.getElementById("draggable");
             draggable.classList.remove("hidden");
             document.getElementById("explanation-draggable").innerHTML = "<span style='font-style: italic; font-size: 20px;'>" + currentQuestion[6] + "</span><br/><br/>" + currentQuestion[7];
             dragElement(draggable);
 
-            if(continueGame) changeActionToEnter();
+            if(continueGame) {
+                await sleep(500);
+                document.onkeydown = () => true;
+                changeActionToEnter();
+            }
         }
         else return false;
     }
